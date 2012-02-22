@@ -16,7 +16,6 @@ call pathogen#helptags()
 
 " Vim UI {
   syntax enable
-  set background=dark " Set dark solarized theme
   set t_Co=256 " 256 colors"
 
   set textwidth=80 " Switch line at 80 characters
@@ -45,6 +44,17 @@ call pathogen#helptags()
   set tabstop=2 " Tabs are 2 spaces
   set backspace=2 " Backspace back 2 spaces
   set shiftwidth=2 " Even if there are tabs, preview as 2 spaces
+
+  set nu
+  set relativenumber
+
+  nnoremap ; :
+
+  inoremap jj <ESC>
+
+  colors badwolf
+
+
 " }
 
   " NerdTree {
